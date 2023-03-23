@@ -5,14 +5,20 @@ public class Question5 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int num = 250;
-
+		int num = 90;
+		int divBy100 = num/100;
+		
 		if (num < 0) {
 
 			System.out.println("num은 0미만");
-		} else {
-
-			switch (num / 100) {
+		}
+			switch (divBy100) {
+			
+			case 0:{
+				System.out.println("num은 0이상 100미만");
+				break;				
+			}
+			
 			case 1: {
 
 				System.out.println("num은 100이상 200미만");
@@ -33,4 +39,4 @@ public class Question5 {
 		}
 	}
 
-}
+
