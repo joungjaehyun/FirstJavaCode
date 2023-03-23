@@ -12,7 +12,7 @@ public class Question14 {
 			
 			for (b = 0; b < 10; b++) {
 			
-				if( a == b) continue;
+				if( a == b) {continue;}
 				sum = (a*10 +b) +(b*10 +a);
 				
 				if(sum == 99) {
