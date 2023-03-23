@@ -6,19 +6,19 @@ public class Question05 {
 		// TODO Auto-generated method stub
 
 		int num = 90;
-		int divBy100 = num/100;
-		
+		int divBy100 = num / 100;
+
 		if (num < 0) {
 
 			System.out.println("num은 0미만");
-		}
+		} else {
 			switch (divBy100) {
-			
-			case 0:{
+
+			case 0: {
 				System.out.println("num은 0이상 100미만");
-				break;				
+				break;
 			}
-			
+
 			case 1: {
 
 				System.out.println("num은 100이상 200미만");
@@ -29,15 +29,15 @@ public class Question05 {
 				break;
 			}
 			case 3: {
-				
+
 				System.out.println("num은 300이상");
 				break;
 			}
 			default:
 				System.out.println("num은 400이상");
-				
+
 			}
 		}
 	}
 
-
+}
