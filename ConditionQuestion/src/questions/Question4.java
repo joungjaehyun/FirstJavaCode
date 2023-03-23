@@ -9,10 +9,10 @@ public class Question4 {
 		if(n == 1) {
 			System.out.println("Simple Java");
 		}
-		else if (n ==2) {
+		else if (n == 2) {
 			System.out.println("Funny Java");
 		}
-		else if (n ==3) {
+		else if (n == 3) {
 			System.out.println("Fantastic Java");
 		}
 		else {

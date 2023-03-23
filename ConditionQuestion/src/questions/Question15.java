@@ -26,6 +26,7 @@ public class Question15 {
 		default:
 			System.out.println("현재 많은 사람들이 있습니다.");
 		}
+		System.out.println();
 		
 		if (n==1) {
 			System.out.println("현재 인원은 1명 입니다.");

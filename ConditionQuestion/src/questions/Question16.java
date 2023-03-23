@@ -18,7 +18,7 @@ public class Question16 {
 		System.out.println(sum);
 		System.out.println();
 
-	
+		i = 0;
 		sum = 0;
 		do {
 			sum += i;

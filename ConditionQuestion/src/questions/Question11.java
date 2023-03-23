@@ -9,7 +9,7 @@ public class Question11 {
 
 	    	for(num=1; num<100; num++) {
 	        if(num%5!=0 || num%7!=0)
-	        continue;
+	        { continue;}
 	        count++;
 	        System.out.println(num);
 	    }

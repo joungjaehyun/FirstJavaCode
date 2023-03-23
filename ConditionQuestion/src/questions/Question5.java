@@ -35,6 +35,7 @@ public class Question5 {
 			}
 			default:
 				System.out.println("num은 400이상");
+				
 			}
 		}
 	}
