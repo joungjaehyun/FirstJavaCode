@@ -17,14 +17,14 @@ public class Question12 {
 				count++;
 				
 			}
-			else if ((num %2 ==0) && (num %3 == 0)){ 
+			else if  (num %3 == 0){ 
 				
 				sum += num;
 				count++;
 	     	}
 		
 			if (sum >1000) {
-				
+				System.out.println(num);
 				System.out.println(sum);
 				System.out.println(count);
 				break;
