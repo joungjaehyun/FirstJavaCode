@@ -13,7 +13,7 @@ public class ContactMain {
 		contact.setName(in.nextLine());
 		
 		System.out.println("전화번호를 입력해 주세요 >>");
-		contact.setPhoneNumber(in.nextInt());
+		contact.setPhoneNumber(in.nextLong());
 		in.nextLine();
 		System.out.println("이메일을 입력해 주세요 >>");
 		contact.setEmail(in.nextLine());
