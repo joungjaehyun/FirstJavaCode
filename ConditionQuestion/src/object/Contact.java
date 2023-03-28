@@ -4,7 +4,7 @@ public class Contact {
 	
 	// 변수들의 캡슐화 처리
 	private String name;
-	private int phoneNumber;
+	private long phoneNumber;
 	private String email;
 	private String address;
 	private int birth;
@@ -26,10 +26,10 @@ public class Contact {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getPhoneNumber() {
+	public long getPhoneNumber() {
 		return phoneNumber;
 	}
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(long phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 	public String getEmail() {
@@ -56,6 +56,7 @@ public class Contact {
 	public void setGroup(String group) {
 		this.group = group;
 	}
+	
 	public void showData() {
 		System.out.println("이름 "  + name);
 		System.out.println("번호 "  + phoneNumber);
