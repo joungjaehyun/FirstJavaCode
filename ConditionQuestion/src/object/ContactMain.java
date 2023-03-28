@@ -28,6 +28,8 @@ public class ContactMain {
 		contact.setGroup(in.nextLine());
 		
 		contact.showData();
+		
+		
 	}
 
 }
