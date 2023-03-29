@@ -6,7 +6,7 @@ public class StudentMain {
 		//① Student 타입의 배열을 선언하고, 요소 10개를 저장할 수 있는 배열 인스턴스를 생성해 봅시다
 		// TODO Auto-generated method stub
 		Student []student = new Student[10];
-		
+		int korSum =0;
 		//② Student 타입의 인스턴스를 생성하고 배열에 저장하는 코드를 정의해봅시다.
 		student[0] = new Student("정재현", 80, 90, 50);
 		student[1] = new Student("정재현", 60, 10, 40);
@@ -22,7 +22,15 @@ public class StudentMain {
 		//③ 배열에 저장된 Student 타입의 인스턴스의 메소드를 이용해서 모든 데이터를 출력해봅시다
 		for (Student student2 : student) {
 			System.out.println(student2);
+			  korSum+= student2.getKorScore();
+
+			
+		
 		}
+		float korAvg= (float) korSum/student.length;
+		System.out.println(korSum);
+		System.out.println(korAvg);
 	}
+	
 
 }

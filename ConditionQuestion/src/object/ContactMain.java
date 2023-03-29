@@ -13,8 +13,8 @@ public class ContactMain {
 		contact.setName(in.nextLine());
 		
 		System.out.println("전화번호를 입력해 주세요 >>");
-		contact.setPhoneNumber(in.nextLong());
-		in.nextLine();
+		contact.setPhoneNumber(in.nextLine());
+		
 		System.out.println("이메일을 입력해 주세요 >>");
 		contact.setEmail(in.nextLine());
 
@@ -22,8 +22,8 @@ public class ContactMain {
 		contact.setaddress(in.nextLine());
 
 		System.out.println("생일을 입력해 주세요");
-		contact.setBirth(in.nextInt());
-		in.nextLine();
+		contact.setBirth(in.nextLine());
+	
 		System.out.println("그룹을 입력해 주세요");
 		contact.setGroup(in.nextLine());
 		

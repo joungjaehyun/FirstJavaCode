@@ -4,19 +4,19 @@ public class Contact {
 	
 	// 변수들의 캡슐화 처리
 	private String name;
-	private long phoneNumber;
+	private String phoneNumber;
 	private String email;
 	private String address;
-	private int birth;
+	private String birth;
 	private String group;
 	
 	// 데이터를 초기화하는 생성자
 	public Contact() {
 		name = "";
-		phoneNumber = 0;
+		phoneNumber = "";
 		email = "";
 		address = "";
-		birth = 0;
+		birth = "";
 		group = "";
 	}
 	
@@ -26,10 +26,10 @@ public class Contact {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public long getPhoneNumber() {
+	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-	public void setPhoneNumber(long phoneNumber) {
+	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 	public String getEmail() {
@@ -44,10 +44,10 @@ public class Contact {
 	public void setaddress(String address) {
 		this.address = address;
 	}
-	public int getBirth() {
+	public String getBirth() {
 		return birth;
 	}
-	public void setBirth(int birth) {
+	public void setBirth(String birth) {
 		this.birth = birth;
 	}
 	public String getGroup() {
