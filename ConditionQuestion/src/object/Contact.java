@@ -20,6 +20,22 @@ public class Contact {
 		group = "";
 	}
 	
+	
+	public Contact(String name,
+			String phoneNumber,
+			String email,
+			String address, String birth, 
+			String group) 
+	{
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+		this.email = email;
+		this.address = address;
+		this.birth = birth;
+		this.group = group;
+	}
+
+
 	public String getName() {
 		return name;
 	}
