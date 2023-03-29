@@ -54,9 +54,9 @@ public class SmartPhone {
 		}
 	}
 
-	public void deleteData() {
+	public void deleteData(int i) {
 		System.out.println("숫자를 입력해 주세요");
-		int i = in.nextInt();
+		 i = in.nextInt();
 		if (i > 10) {
 			System.out.println("index 보다 커서 입력 저장불가능합니다.");
 		} else {
