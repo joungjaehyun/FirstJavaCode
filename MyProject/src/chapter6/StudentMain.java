@@ -21,11 +21,7 @@ public class StudentMain {
 		
 		//③ 배열에 저장된 Student 타입의 인스턴스의 메소드를 이용해서 모든 데이터를 출력해봅시다
 		for (Student student2 : student) {
-			System.out.print("학생이름 : " + student2.getStudentName() +"\t" +
-							"국어점수 : " + student2.getKorScore() +"\t" + "영어점수 : "
-					+ student2.getEngScore()+ "수학점수 : " +student2.getMathScore() +" \t 총합 : " +student2.getSum()
-					+"\t 평균 : " +student2.getAvg());
-			System.out.println();
+			System.out.println(student2);
 		}
 	}
 
