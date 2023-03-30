@@ -2,7 +2,14 @@ package chapter7;
 
 public class Female extends Person{
 
-	String job;
+	private String job;
+	
+	public String getJob() {
+		return job;
+	}
+	public void setJob(String job) {
+		this.job = job;
+	}
 	public Female(String name, String id, String job) {
 		super(name, id);
 		this.job = job;

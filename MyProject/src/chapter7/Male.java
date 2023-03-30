@@ -4,6 +4,18 @@ public class Male extends Person {
 	
 	String job;
 	
+	public String getJob() {
+		return job;
+	}
+
+
+
+	public void setJob(String job) {
+		this.job = job;
+	}
+
+
+
 	public Male(String name,String id,String job) {
 		super(name,id);
 		this.job = job;
