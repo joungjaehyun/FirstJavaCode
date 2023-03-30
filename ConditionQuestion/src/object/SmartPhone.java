@@ -47,6 +47,9 @@ public class SmartPhone {
 					contact[i].setBirth(in.nextLine());
 					System.out.println("바꿀그룹을 입력해 주세요");
 					contact[i].setGroup(in.nextLine());
+					contact[i].showData();
+					System.out.println("변경되었습니다.");
+					break;
 				
 				}
 			}
@@ -57,26 +60,34 @@ public class SmartPhone {
 	}
 
 	public void deleteData() {
-		int findMacth =-1;
+		
 		System.out.println("이름을 입력해 주세요");
 		String name=in.nextLine();
 		
+		
 		for (int i = 0; i < contact.length; i++) {
-			Contact c = contact[i];
-			String matchName = c.getName();
-			if (c.getName().equals(name)) {
-				findMacth = i;
+			if (contact[i].getName().equals(name)) {
+				contact[i].setName("");
+				contact[i].setPhoneNumber("");
+				contact[i].setEmail("");
+				contact[i].setaddress("");
+				contact[i].setBirth("");
+				contact[i].setGroup("");
+				count--;
 				break;
 			}
 		}
-			contact[findMacth].setName("");
-			contact[findMacth].setPhoneNumber("");
-			contact[findMacth].setEmail("");
-			contact[findMacth].setaddress("");
-			contact[findMacth].setBirth("");
-			contact[findMacth].setGroup("");
-			count--;
+			
 		
+	}
+	public void searchData() {
+		System.out.println("이름을 입력해 주세요>>");
+		String name = in.nextLine();
+		for (int i = 0; i < contact.length; i++) {
+			if (contact[i].getName().equals(name)) {
+				contact[i].showData();
+				break;}
+			}
 	}
 
 	public void showData() {
