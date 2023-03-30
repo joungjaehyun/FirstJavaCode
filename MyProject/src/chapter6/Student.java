@@ -54,8 +54,8 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "학생 [학생명=" + studentName + ", 국어점수 =" + korScore + ", 영어점수 =" + engScore
-				+ ", 수학점수 =" + mathScore + ", 합계 =" + getSum() + ", 평균 =" + getAvg() + "]";
+		return "[학생명 = " + studentName + ", 국어점수 =" + korScore + ", 영어점수 = " + engScore
+				+ ", 수학점수 = " + mathScore + ", 합계 = " + getSum() + ", 평균 = " + getAvg() + "]";
 	}
 	
 	

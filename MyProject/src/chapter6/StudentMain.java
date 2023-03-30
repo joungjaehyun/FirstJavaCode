@@ -23,13 +23,12 @@ public class StudentMain {
 		for (Student student2 : student) {
 			System.out.println(student2);
 			  korSum+= student2.getKorScore();
-
+			  
 			
 		
 		}
 		float korAvg= (float) korSum/student.length;
-		System.out.println(korSum);
-		System.out.println(korAvg);
+	
 	}
 	
 
