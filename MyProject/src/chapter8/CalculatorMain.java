@@ -21,7 +21,7 @@ public class CalculatorMain {
 		System.out.println("두 수의 차는 : " + cul.substract(num1, num2));
 		System.out.println("두 수의 곱은 : " + cul.multiply(num1, num2));
 		System.out.println("두 수의 나누기는 : " + cul.divide(num1, num2));
-		
+		in.close();
 	}
 
 }
