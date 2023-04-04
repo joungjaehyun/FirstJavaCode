@@ -21,6 +21,7 @@ public class InputIdRegularExpression {
 		}
 		catch (BadIdInputException e) {
 			System.out.println(e.getMessage());
+			e.printStackTrace();
 		}
 	}
 }
