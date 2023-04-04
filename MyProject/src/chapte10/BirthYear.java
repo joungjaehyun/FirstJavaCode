@@ -14,7 +14,7 @@ public class BirthYear {
 		String birthYear = sc.nextLine();
 		try {
 			int birth = Integer.parseInt(birthYear);
-			if (birth <0) {
+			if (birth <0|| birth<999) {
 				BirthNegative e =new BirthNegative();
 				throw e;
 			}
