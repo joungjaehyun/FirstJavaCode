@@ -22,12 +22,10 @@ public class BirthYear {
 			System.out.println("생일은 " +birth +"년 입니다.");
 		}catch(BirthNegative e) {
 			System.out.println(e.getMessage());
-		}
-		catch(NumberFormatException e){
 			System.out.println("정수만 입력해 주세요");
 			e.printStackTrace();
 		}
-		
+	
 	}
 
 }
