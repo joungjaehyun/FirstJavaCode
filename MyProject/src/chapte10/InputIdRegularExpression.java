@@ -12,7 +12,7 @@ public class InputIdRegularExpression {
 		
 		try {
 			boolean checking =false;
-			checking = id.matches("[a-zA-Z0-9]");
+			checking = id.matches("^[a-zA-Z0-9]*$");
 			if (!checking) {
 				BadIdInputException e = new BadIdInputException();
 				throw e;
