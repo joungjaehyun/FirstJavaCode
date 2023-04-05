@@ -9,11 +9,13 @@ public class BirthYear {
 		
 		//Scanner 클래스로 태어난 년도를 입력 받을 때 int 타입으로 받도록 합시다. 
 		//이때 nextInt() 메소드를 사용하게 되는데 이때 발생하는 예외처리를 하도록 합시다.
+		
 		Scanner sc =new Scanner(System.in);
 		System.out.println("생년을 입력해주세요");
 		String birthYear = sc.nextLine();
 		try {
 			int birth = Integer.parseInt(birthYear);
+			// 생일값이 음수 일경우, 4자릿수가 안될경우
 			if (birth <0|| birth<999) {
 				BirthNegative e =new BirthNegative();
 				throw e;

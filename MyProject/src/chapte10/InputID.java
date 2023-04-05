@@ -14,9 +14,9 @@ public class InputID {
 		try {
 			for(int i=0; i<id.length(); i++) {
 				
-				if (!((id.charAt(i)>='a'&&id.charAt(i)<='z')||
-						(id.charAt(i)>='A'&&id.charAt(i)<='Z')
-						||(id.charAt(i)>='0'&&id.charAt(i)<='9'))) {
+				if (!(id.charAt(i)>='a'&&id.charAt(i)<='z'||
+						id.charAt(i)>='A'&&id.charAt(i)<='Z'
+						||id.charAt(i)>='0'&&id.charAt(i)<='9')) {
 					BadIdInputException e = new BadIdInputException();
 							throw e;
 							}
