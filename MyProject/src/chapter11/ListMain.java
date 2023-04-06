@@ -53,6 +53,8 @@ public class ListMain {
 				}
 			}
 		}
+		
+		
 		// ArrayList 값을 출력 및 입력값 받는것을 닫음
 		System.out.println("----------------------");
 		for (FootballPlayer footballPlayer : players) {
