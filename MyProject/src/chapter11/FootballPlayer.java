@@ -50,7 +50,6 @@ public class FootballPlayer implements Comparable<FootballPlayer> {
 	
 	@Override
 	public int hashCode() {
-		
 		return this.name.charAt(name.length()-1);
 	}
 	// TreeSet<E>을 이용해서 팀 이름순으로 정렬하고, => comparable 인터페이스 implements
@@ -61,26 +60,28 @@ public class FootballPlayer implements Comparable<FootballPlayer> {
 	public int compareTo(FootballPlayer o) {
 		
 		int returnNum =0;
-		if (this.team.compareTo(o.getTeam()) >0) {
-			returnNum =1;
-		}else if (this.team.compareTo(o.getTeam()) <0) {
-			returnNum = -1;
-		}else {
-			if (this.name.compareTo(o.getName())>0) {
-				returnNum = 1;
+		if (this.team.compareTo(o.getTeam()) ==0) {
+			if (this.name.compareTo(o.getName())==0) {
+				if (this.number > o.getNumber()) {
+					returnNum =1;
+				}else if(this.number < o.getNumber()) {
+					returnNum = -1;
+				}else {
+					returnNum = 0;
+				}
+				
 			}else if (this.name.compareTo(o.getName())<0) {
 				returnNum = -1;
 			}else {
-				if (this.number>o.getNumber()) {
-					returnNum = 1;
-				}else {
-					returnNum = -1;
-				}
+				returnNum = 1;
+			}
+		}else if (this.team.compareTo(o.getTeam()) <0) {
+			returnNum = -1;
+		}else {
+			returnNum = 1;
 			}
 			
-			}
-		
-		
+			
 		
 		return returnNum;
 	}
@@ -91,7 +92,7 @@ public class FootballPlayer implements Comparable<FootballPlayer> {
 	// 축구선수의 인스턴스가 팀과 이름 그리고 나이가 같으면 같은 선수라 판단하고 입력이 되지 않도록 
 	@Override
 	public boolean equals(Object obj) {
-
+		
 		FootballPlayer player =null;
 		if (obj!=null && obj instanceof FootballPlayer) {
 			player = (FootballPlayer) obj;

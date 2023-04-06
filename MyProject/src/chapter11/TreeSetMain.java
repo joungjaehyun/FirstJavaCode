@@ -10,6 +10,7 @@ public class TreeSetMain {
 		player.add(new FootballPlayer("손흥민", 10, "토트넘", 30));
 		player.add(new FootballPlayer("박지성", 15, "토트넘", 40));
 		player.add(new FootballPlayer("손흥민", 9, "토트넘", 25));
+
 		
 		for(FootballPlayer p : player) {
 			System.out.println(p);
