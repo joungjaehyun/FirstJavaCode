@@ -59,31 +59,16 @@ public class FootballPlayer implements Comparable<FootballPlayer> {
 	@Override
 	public int compareTo(FootballPlayer o) {
 		
-		int returnNum =0;
-		if (this.team.compareTo(o.getTeam()) ==0) {
-			if (this.name.compareTo(o.getName())==0) {
-				if (this.number > o.getNumber()) {
-					returnNum =1;
-				}else if(this.number < o.getNumber()) {
-					returnNum = -1;
-				}else {
-					returnNum = 0;
-				}
-				
-			}else if (this.name.compareTo(o.getName())<0) {
-				returnNum = -1;
-			}else {
-				returnNum = 1;
+		int compare = this.team.compareTo(o.getTeam());
+		if (compare ==0) {
+			compare = this.name.compareTo(o.getName());
+			if (compare == 0) {
+				compare = this.number - o.getNumber();
+				// compare = Integer.compare(this.number, o.getNumber());
 			}
-		}else if (this.team.compareTo(o.getTeam()) <0) {
-			returnNum = -1;
-		}else {
-			returnNum = 1;
-			}
+		}
 			
-			
-		
-		return returnNum;
+		return compare;
 	}
 	
 	
